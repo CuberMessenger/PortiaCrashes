@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="2bc1ed5f43b040a0aa74787ec24f3633" class="chart-container" style="width:1024px; height:720px;"></div>
+    <div id="9bc77298c8be4d26aeee7f85eba1f39e" class="chart-container" style="width:1024px; height:720px;"></div>
     <script>
-        var chart_2bc1ed5f43b040a0aa74787ec24f3633 = echarts.init(
-            document.getElementById('2bc1ed5f43b040a0aa74787ec24f3633'), 'white', {renderer: 'canvas'});
-        var option_2bc1ed5f43b040a0aa74787ec24f3633 = {
+        var chart_9bc77298c8be4d26aeee7f85eba1f39e = echarts.init(
+            document.getElementById('9bc77298c8be4d26aeee7f85eba1f39e'), 'white', {renderer: 'canvas'});
+        var option_9bc77298c8be4d26aeee7f85eba1f39e = {
     "backgroundColor": "#f9f9f9",
     "animation": true,
     "animationThreshold": 2000,
@@ -85,7 +85,7 @@
                 "margin": 8
             },
             "lineStyle": {
-                "width": 3,
+                "width": 6,
                 "opacity": 1,
                 "curveness": 0,
                 "type": "solid",
@@ -94,63 +94,23 @@
             "areaStyle": {
                 "opacity": 0
             },
-            "itemStyle": {
-                "color": "#45451F",
-                "borderColor": "balck",
-                "borderWidth": 1.5
-            },
-            "rippleEffect": {
-                "show": true,
-                "brushType": "stroke",
-                "scale": 2.5,
-                "period": 4
-            }
-        },
-        {
-            "type": "line",
-            "name": "15s (above\u2161)",
-            "connectNulls": false,
-            "symbolSize": 6,
-            "showSymbol": true,
-            "smooth": false,
-            "step": false,
-            "data": [
-                [
-                    "1971",
-                    30
-                ],
-                [
-                    "1972",
-                    28
-                ],
-                [
-                    "1973",
-                    26
-                ],
-                [
-                    "1974",
-                    24
-                ],
-                [
-                    "1975",
-                    22
+            "markPoint": {
+                "label": {
+                    "show": true,
+                    "position": "inside",
+                    "color": "#fff",
+                    "margin": 8
+                },
+                "data": [
+                    {
+                        "coord": [
+                            "1973",
+                            26
+                        ],
+                        "value": "Policy",
+                        "symbolSize": 80
+                    }
                 ]
-            ],
-            "hoverAnimation": true,
-            "label": {
-                "show": false,
-                "position": "top",
-                "margin": 8
-            },
-            "lineStyle": {
-                "width": 3,
-                "opacity": 1,
-                "curveness": 0,
-                "type": "dashed",
-                "color": "#45451F"
-            },
-            "areaStyle": {
-                "opacity": 0
             },
             "itemStyle": {
                 "color": "#45451F",
@@ -201,7 +161,7 @@
                 "margin": 8
             },
             "lineStyle": {
-                "width": 3,
+                "width": 6,
                 "opacity": 1,
                 "curveness": 0,
                 "type": "solid",
@@ -259,7 +219,7 @@
                 "margin": 8
             },
             "lineStyle": {
-                "width": 3,
+                "width": 6,
                 "opacity": 1,
                 "curveness": 0,
                 "type": "solid",
@@ -317,7 +277,7 @@
                 "margin": 8
             },
             "lineStyle": {
-                "width": 3,
+                "width": 6,
                 "opacity": 1,
                 "curveness": 0,
                 "type": "solid",
@@ -337,23 +297,153 @@
                 "scale": 2.5,
                 "period": 4
             }
+        },
+        {
+            "type": "line",
+            "name": "Line1",
+            "connectNulls": false,
+            "symbolSize": 6,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "1971",
+                    [
+                        30,
+                        1
+                    ]
+                ],
+                [
+                    "1972",
+                    28
+                ],
+                [
+                    "1973",
+                    27.9
+                ],
+                [
+                    "1974",
+                    27.8
+                ],
+                [
+                    "1975",
+                    27.7
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "dashed",
+                "color": "black"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "itemStyle": {
+                "color": "balck",
+                "borderColor": "balck",
+                "borderWidth": 1.5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "line",
+            "name": "Line2",
+            "connectNulls": false,
+            "symbolSize": 6,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "1971",
+                    [
+                        30,
+                        1
+                    ]
+                ],
+                [
+                    "1972",
+                    [
+                        22,
+                        1
+                    ]
+                ],
+                [
+                    "1973",
+                    [
+                        21.9,
+                        1
+                    ]
+                ],
+                [
+                    "1974",
+                    22
+                ],
+                [
+                    "1975",
+                    21.8
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "dashed",
+                "color": "black"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "itemStyle": {
+                "color": "balck",
+                "borderColor": "balck",
+                "borderWidth": 1.5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
         }
     ],
     "legend": [
         {
             "data": [
                 "15s (above\u2160)",
-                "15s (above\u2161)",
                 "17s (above)",
                 "15s (below)",
-                "17s (below)"
+                "17s (below)",
+                "Line1",
+                "Line2"
             ],
             "selected": {
                 "15s (above\u2160)": true,
-                "15s (above\u2161)": true,
                 "17s (above)": true,
                 "15s (below)": true,
-                "17s (below)": true
+                "17s (below)": true,
+                "Line1": true,
+                "Line2": true
             },
             "show": true,
             "padding": 5,
@@ -361,7 +451,7 @@
             "itemWidth": 25,
             "itemHeight": 14,
             "textStyle": {
-                "fontSize": 20
+                "fontSize": 16
             }
         }
     ],
@@ -395,11 +485,11 @@
                 "show": true,
                 "position": "top",
                 "margin": 8,
-                "fontSize": 24
+                "fontSize": 16
             },
             "axisPointer": {
                 "show": true,
-                "type": "shadow"
+                "type": "line"
             },
             "inverse": false,
             "offset": 0,
@@ -441,7 +531,7 @@
                 "show": true,
                 "position": "top",
                 "margin": 8,
-                "fontSize": 24
+                "fontSize": 16
             },
             "axisPointer": {
                 "show": false,
@@ -468,7 +558,7 @@
         }
     ]
 };
-        chart_2bc1ed5f43b040a0aa74787ec24f3633.setOption(option_2bc1ed5f43b040a0aa74787ec24f3633);
+        chart_9bc77298c8be4d26aeee7f85eba1f39e.setOption(option_9bc77298c8be4d26aeee7f85eba1f39e);
     </script>
 </body>
 </html>
